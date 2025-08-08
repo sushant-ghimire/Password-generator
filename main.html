@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <style>
+       
+        
+        .logo {
+            border-radius: 100px;
+            width: 100px;
+            height: 0100px;
+        }
+
+        .main {
+            text-align: center;
+            margin: 5% auto 0 auto;
+            padding: 2vw;
+            border: 1px solid red;
+            border-radius: 50px;
+            background-color: azure;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .show_password {
+            text-align: center;
+            border: solid black 1px;
+            height: 5rem;
+            border-radius: 50px;
+        }
+
+        #randomWord {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            background: #f0f8ff;
+            padding-top: 2rem;
+            transition: color 0.3s;
+            overflow: hidden;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 20px 30px;
+            border-radius: 50px;
+        }
+
+
+        @media (max-width: 600px) {
+            #randomWord {
+                font-size: 7vw;
+                padding: 4vw 0;
+            }
+
+            .main {
+                padding: 4vw;
+                border-radius: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        
+            <img class="logo"
+                src="https://scontent.fktm21-2.fna.fbcdn.net/v/t39.30808-1/504012863_122148474008590158_1578092276353506289_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=X-TToXb-7jAQ7kNvwHJHgFq&_nc_oc=AdlrylxVDehyyffJbM6Kz5E_fzeWxxEQSASYeYPi0nl8y_XfJlxGpUBdb8uPuXqdZnI2N2MMUOphq7WBP1HD1lMe&_nc_zt=24&_nc_ht=scontent.fktm21-2.fna&_nc_gid=tK5c7B77tSlGF5MISAsHbw&oh=00_AfJ0dqsZuQcDsKSU874AZMEDkLwl2q598bGFk7h1Qrr93w&oe=68464DA9"
+                alt="website owner">
+            
+       
+    </header>
+    <div class="main">
+        <div class="heading">
+            <h1 style="color: red;">Want A Random Pa$$word ?</h1>
+        </div>
+        <div class="show_password" id="randomWord">
+            
+            <!-- password creates here -->
+        </div>
+
+        <button id="generateBtn">Generate</button>
+    </div>
+
+    <script src="back.js"></script>
+</body>
+
+</html>
